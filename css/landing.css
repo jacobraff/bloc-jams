@@ -6,7 +6,7 @@ body.landing {
      position: relative;
      color: white;
      min-height: 600px;
-     background-image: url(/Users/jacobraff/Desktop/Fishtank/bloc-jams/images/bloc_jams_backgroundimage.jpg);
+     background-image: url(/Users/jacobraff/Desktop/bloc-jams/images/bloc_jams_backgroundimage.jpg);
      background-repeat: no-repeat;
      background-position: center center;
      background-size: cover;
@@ -29,7 +29,7 @@ body.landing {
 
  .selling-points {
      position: relative;
-    
+
 
  }
 
