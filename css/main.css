@@ -72,9 +72,30 @@ body {
   box-sizing: border-box;
 }
 
+.clearfix::before,
+.clearfix::after {
+   content: " ";
+   display: table;
+}
+
+.clearfix::after {
+   clear: both;
+}
+
+
+
+
+
+
+
+
+
 .container {
   margin: 0 auto;
   max-width: 64rem;
+}
+.container.narrow {
+  max-width: 56rem;
 }
 
 /*Medium screens 640px */
