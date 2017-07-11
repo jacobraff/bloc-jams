@@ -30,7 +30,7 @@ var albumMarconi = {
     ]
 };
 var albumJake  = {
-     name: 'jakey boy',
+    title: 'jakey boy',
     artist: 'Jacob',
     label: 'flame records',
     year: '2017',
@@ -75,7 +75,7 @@ var setCurrentAlbum = function(album) {
    albumSongList.innerHTML = '';
 
    for(i = 0; i < album.songs.length; i++) {
-     albumSongList.innerHTML += createSongRow(i + 1, album.songs[i].name, album.songs[i].length);
+     albumSongList.innerHTML += createSongRow(i + 1, album.songs[i].title, album.songs[i].duration);
    }
 };
 //checkpoint 26 //
