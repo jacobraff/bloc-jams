@@ -160,10 +160,15 @@ var currentlyPlayingSong =null;
        });
      }
 
-
+     var albums = [albumPicasso, albumMarconi, albumJake];
+     var index = 2;
 
      albumImage.addEventListener("Click", function (event){
+setCurrentAlbum(albums[index]);
+index++;
+if (index == albums.length) {
+  index = 0;
+}
 
-
-     })
+     });
  };
