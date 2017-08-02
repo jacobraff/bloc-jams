@@ -1,4 +1,5 @@
-var animatePoints = function(){
+
+var animatePoints = function() {
   var revealPoint = function(){
     $(this).css ({
       opacity: 1,
@@ -11,28 +12,24 @@ var animatePoints = function(){
 
 
 
-
-
-
-
+/*
 var animatePoints = function(points){
-forEach(points,revealPoint);
-
-
-
+forEach(points, revealPoint);
  };
+*/
 
- $(window).load(function() {
+$(window).load(function() {
    if ($(window).height() > 950) {
           animatePoints();
       }
 
-var scrollDistance = $('.selling-points').offset().top - $(window).height() + 200;
+      var scrollDistance = $('.selling-points').offset().top - $(window).height() + 200;
 
 
-   $(window).scroll(function(event){
+      $(window).scroll(function(event){
 
-  if ($(window).scrollTop() >= scrollDistance){
-    animatePoints();
+    if ($(window).scrollTop() >= scrollDistance){
+      animatePoints();
+    }
   });
-   };
+});
